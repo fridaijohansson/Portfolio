@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+@font-face {
+    font-family: myfont;
+    src: url(RawengulkRegular-D6JW.ttf);
+}
+
+html{
+}
+body{
+    display: flex;
+    height: 100vh;
+}
+
+
+
+#side-menu{
+    width: 15vw;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(208, 194, 194);
+    font-size: 20px;
+    text-align: left;
+    text-align: center;
+    position: fixed;
+}
+
+#profile{
+    height: 30%;
+    margin: 20px;
+    
+}
+#profile img{
+    width: 200px;
+    height: 200px;
+}
+
+#side-menu ul{
+    font-family: myfont;
+    text-align: left;
+    margin-left: 30px;
+}
+
+#navbar{
+}
+#navbar li{
+    padding: 10px;
+}
+
+
+#navbar li a{
+    color: black;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#navbar li a:hover{
+    color: rgb(230, 132, 132);
+}
+
+
+#navbar .submenu {
+    width: 100%;
+}
+#navbar .submenu-content a:hover{
+    
+}
+
+
+.arrow{
+    width: 15px;
+    height: 15px;
+    float: right;
+    padding-left: 50px;
+}
+
+.submenu-content {
+    display: none;
+    position:absolute;
+    left: 13vw;
+    top: 50vh;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.submenu-content a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.submenu:hover .submenu-content{
+    display: block;
+}
+
+
+
+#links{
+}
+#links .link-icons{
+    margin-top: 20vh;
+    width: 30px;
+    height: 30px;
+    
+}
+#links .link-icons:first-child{
+    margin-right: 20px;
+}
+
+
+
+
+
+/* Homepage / about me */
+
+#home-main{
+    margin-left: 15vw;
+    height: fit-content;
+    background-image: url(img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.homepage-content{
+    margin: 5%;
+    padding: 5%;
+    background-color: rgba(146, 156, 157, 0.463);
+    font-family: myfont;
+    font-weight: bold;
+}
+.homepage-content div{
+    padding: 10px;
+    
+    text-align: center;
+    font-size: 150%;
+}
+.homepage-content h1{
+    font-size: 200%;
+}
+.homepage-content h3{
+    color: rgb(146, 156, 157);
+    border-bottom: solid 1px rgb(146, 156, 157);
+    padding-bottom: 30px;
+}
+.homepage-content p{
+    line-height: 30px;
+}
+
+#project-slider img{
+    width: 300px;
+    height: 300px;
+}
+
+
