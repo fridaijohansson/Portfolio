@@ -21,12 +21,12 @@ body{
 #side-menu{
     width: 15vw;
     height: 100%;
-    overflow: hidden;
     background-color: rgb(208, 194, 194);
     font-size: 20px;
     text-align: left;
     text-align: center;
     position: fixed;
+    z-index: 2;
 }
 
 #profile{
@@ -83,17 +83,18 @@ body{
     display: none;
     position:absolute;
     left: 13vw;
-    top: 50vh;
+    top: 30vh;
     width: 300px;
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2;
 }
 
 
 .submenu-content a {
     color: black;
     text-decoration: none;
+    
 }
 
 
@@ -116,47 +117,262 @@ body{
 }
 
 
+.tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 2px;
+    font-family: myfont;
+    /* Position the tooltip */
+    position: absolute;
+    left: 15%;
+    top: 75%;
+    z-index: 2;
+}
+  
+#link-linkedin:hover .linkedin{
+    visibility: visible;
+}
+#link-github:hover .github{
+    visibility: visible;
+}
+#link-mail:hover .mail{
+    visibility: visible;
+}
 
+
+
+
+
+
+
+
+
+
+main{
+    margin-left: 15vw;
+    height: 100vh;
+
+    font-family: myfont;
+}
 
 
 /* Homepage / about me */
 
 #home-main{
-    margin-left: 15vw;
-    height: fit-content;
     background-image: url(img/bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    width: 100%;
+    height: fit-content;
 }
 .homepage-content{
-    margin: 5%;
-    padding: 5%;
+    margin: 2%;
+    padding: 3%;
     background-color: rgba(146, 156, 157, 0.463);
-    font-family: myfont;
     font-weight: bold;
 }
-.homepage-content div{
-    padding: 10px;
-    
-    text-align: center;
-    font-size: 150%;
-}
+
 .homepage-content h1{
     font-size: 200%;
+    color: black;
 }
-.homepage-content h3{
-    color: rgb(146, 156, 157);
+.homepage-header h3{
+    color: rgb(118, 127, 128);
     border-bottom: solid 1px rgb(146, 156, 157);
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .homepage-content p{
     line-height: 30px;
 }
 
-#project-slider img{
-    width: 300px;
-    height: 300px;
+
+
+
+#skills{
+    padding-top: 20px;
+}
+#skills ul{
+    display: inline-block;
+}
+#skills li{
+    border: solid black 1px;
+    width: fit-content;
+    padding: 5px;
+    display: inline;
+}
+
+.header-section{
+    display: flex;
+}
+.header-section div{
+    flex: 1;
+}
+.homepage-bio{
+    border-left: solid rgb(146, 156, 157) 1px;
+    padding-left: 10px;
 }
 
 
+
+.homepage-content{
+    padding: 2% 8%;
+}
+.homepage-content #education, .homepage-content .experience{
+    padding: 2%;
+    border-left: solid rgb(146, 156, 157) 2px;
+    
+}
+ .h1-titles h1{
+    color: rgb(118, 127, 128);
+}
+.content-section{
+    display: flex;
+}
+.content-section div, .content-section div{
+    flex: 4;
+}
+.timeline{
+    flex: 1;
+    float: right;
+    color: rgb(118, 127, 128);
+}
+.homepage-content a{
+    color: rgb(118, 127, 128);
+    font-size: 90%;
+    
+}
+.homepage-content a:hover{
+    color: rgb(230, 132, 132);
+    text-decoration: underline;
+}
+.content-section div{
+    padding-right: 50px;
+}
+
+/* Blogpage / about me */
+
+#blog-main{
+    width: 100%;
+    height: 100vh;
+    padding: 0% 2% 0% 2%;
+    background-color: rgba(208, 194, 194, 0.586);
+    overflow: hidden;
+}
+#blog-main h1{
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+.blog-section{
+    display: flex;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    
+    
+}
+
+.blog_container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    margin: auto;
+    height: 40vh;
+    margin: 10px 5px 0px 5px;
+    color: white;
+    z-index: 1;
+}
+.blog_container::before {
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    
+}
+.blog_container:hover .blog_desc {
+    opacity: 1;
+    height: auto;
+    transition-delay: 0.05s;
+    transition-duration: 0.35s;
+    
+}
+.blog_container:hover .blog_desc, .blog_container:hover .blog_title {
+    transform: translate3d(0, 0, 0);
+}
+.blog_container > img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.blog_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 30vh;
+    padding-bottom: 2.8rem;
+    padding-left: 30px;
+    
+    
+}
+.blog_content .blog_title {
+    margin-bottom: 1rem;
+}
+.blog_content .blog_desc {
+    color: rgb(255, 255, 255);
+    font-size: 110%;
+    width: 80%;
+}
+.blog_content .blog_startFrom {
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: -0.8rem;
+}
+.blog_content .blog_info {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+.blog_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+.blog_content .blog_title, .blog_content .blog_desc {
+    transform: translate3d(0, 40px, 0);
+    
+}
+.blog_content .blog_title {
+    transition: transform 0.35s;
+}
+.blog_content .blog_desc {
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.35s;
+}
+.blog_container:hover .blog_desc {
+    opacity: 1;
+}
+.blog_container:hover .blog_title, .blog_container:hover .blog_desc {
+    transform: translate3d(0, 0, 0);
+}
+.blog_container:hover .blog_desc {
+    transition-delay: 0.05s;
+    transition-duration: 0.35s;
+    
+}
+
+.blog_info{
+    display: flex;
+    width: 100%;
+}
+.blog_info p{
+    flex: 1;
+   
+}
