@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: myfont;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(RawengulkRegular-D6JW.ttf);
+}
+
+#blog-main{
+    margin-left: 15vw;
+
+}
+
+
+#blog-header{
+
+}
+#blog-content{
+    margin: 20px 20%;
+}
+#blog-content section{
+
+}
+#blog-content h2{
+
+}
+#blog-content p{
+
+}
+#blog-section p, #blog-section h2{
+    margin-top: 20px;
+}
+#blog-section p {
+    line-height: 130%;
+    font-size: 120%;
+    margin-bottom: 40px;
+}
+#blog-section dl {
+    margin-bottom: 40px;
+}
+#blog-section dt {
+    font-size: 120%;
+    
+}
+#blog-section dd {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#blog-section dt a{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+#blog-section dt a:hover{
+    color: red;
+    
+}
+#go-back{
+
+}
+
+.blog-text{
+    font-size: 120%;
+    font-weight: bold;
+}
