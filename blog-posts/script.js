@@ -1,3 +1,5 @@
+document.addEventListener("click", myFunction)
+
 function myFunction() {
     var x = document.getElementById("side-menu");
     var y = document.getElementsByTagName("main");

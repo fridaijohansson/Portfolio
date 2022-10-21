@@ -21,7 +21,7 @@ body{
 #side-menu{
     width: 15vw;
     height: 100%;
-    background-color: rgb(210, 191, 176);
+    background-color: rgb(176, 180, 192);
     font-size: 20px;
     text-align: left;
     text-align: center;
@@ -145,13 +145,7 @@ body{
 
 
 
-.icon{
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    z-index: 4;
-    color: black;
-}
+
 
 
 
