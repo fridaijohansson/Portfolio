@@ -9,6 +9,14 @@
     src: url(RawengulkRegular-D6JW.ttf);
 }
 
+@media screen and (max-width: 1400px) {
+
+    html {
+      display: none;
+    }
+    
+  }
+
 html{
 }
 body{
@@ -161,8 +169,8 @@ main{
 
 /* Homepage / about me */
 
-#home-main{
-    background-image: url(img/bg1.jpg);
+#home-main, #project-main{
+    background-image: url(img/bg1-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -170,10 +178,10 @@ main{
     height: fit-content;
     margin-left: 15vw;
 }
-.homepage-content{
+.homepage-content, .project-content{
     margin: 2%;
     padding: 3%;
-    background-color: rgba(146, 156, 157, 0.463);
+    background-color: rgba(255, 255, 255, 0.463);
     font-weight: bold;
 }
 
@@ -193,17 +201,28 @@ main{
 
 
 
-#skills{
+.skills{
     padding-top: 20px;
 }
-#skills ul{
+.skills ul{
     display: inline-block;
 }
-#skills li{
+.skills li{
     border: solid black 1px;
     width: fit-content;
     padding: 5px;
+    margin: 0px 5px 20px 5px;
     display: inline;
+}
+#download{
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 110%;
+    background-color: rgba(128, 128, 128, 0.516);
+    color: white;
+}
+#download:hover{
+    background-color: rgb(230, 132, 132);;
 }
 
 .header-section{
@@ -379,4 +398,78 @@ main{
 .blog_info p{
     flex: 1;
    
+}
+
+
+#project-main{
+    font-size: 120%;
+    font-weight: bold;
+}
+#project-main a:hover{
+    text-decoration: underline;
+}
+#project-main p:last-child{
+    padding: 20px;
+}
+
+#project-content{
+    margin: 20px;
+}
+#project-wrapper{
+    display: flex;
+    
+    flex-direction: row-reverse;
+}
+
+#project-wrapper p{
+    padding-bottom: 20px;
+}
+#project-wrapper #project-wrapper-content{
+    flex: 3;
+    margin: 20px;
+}
+
+
+#project-wrapper-content table{
+    border: solid 2px black;
+}
+#project-wrapper-content table th{
+    padding: 5px;
+    border: solid 2px black;
+}
+#project-wrapper-content table td{
+    padding: 5px;
+    border: solid 2px black;
+    font-size: 65%;
+}
+
+
+
+#project-wrapper video{
+    flex: 1;
+}
+.project-img{
+    display: flex;
+}
+.project-img img{
+    flex: 1;
+    width: 200px;
+    margin: 10px;
+}
+#wireframe{
+    margin: auto;
+    height: 400px;
+}
+.space-game img{
+    height: 250px;
+    width: 50px;
+}
+
+.space-game{
+    flex-direction: row;
+    width: 700px;
+    margin: auto;
+}
+.space-game img:last-child{
+    flex: 3;
 }

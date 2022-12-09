@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Feed | Rock X Europe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="globalStyle.css">
+    <link rel="shortcut icon" href="media/img/x-v2.png" type="image/x-icon">
+    
+</head>
+<body>
+    <nav>
+        <ul id="nav-logos">
+            <li><a href="https://youtube.com" target="_blank"><img src="media/img/yt.png" alt="youtube link"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img src="media/img/insta.png" alt="instagram link"></a></li>
+            <li><a href="https://facebook.com" target="_blank"><img src="media/img/faceb.png" alt="facebook link"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img src="media/img/twitter.png" alt="twitter links"></a></li>
+        </ul>
+        <a href="index.html" class="nav-img"><img src="media/img/logo-v8.png" alt="logo"></a>
+        <ul id="nav-bar">
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="news.html" class="active-link">News Feed</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="hover">Festivals</a>
+                <div class="dropdown-content">
+                      <a href="#">Rock am Ring</a>
+                      <a href="#">Resurrection Fest</a>
+                      <a href="#">Hellfest open Air</a>
+                      <a href="#">Sweden Rock</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+    
+    <main id="nf-main">
+        
+        <div id="nf-content">
+            <div id="nf-navbar">
+                <button id="news-btn" class="active" onclick="ToggleNews()">News</button>
+                <button id="podcasts-btn" onclick="TogglePod()">Podcasts</button>
+            </div>
+
+            <div class="nf-section nf-posts" id="news">
+                <article>
+                    <h1>Sweden Rock Lineup</h1>
+                    <p>New updates has been added to Sweden Rocks Festival site! We are excited to announce that their lineup has been published for the 2021 event. Check the lineup <a href="media/img/sr3.png" target="_blank">HERE &rarr;</a></p>
+                </article>
+                <article>
+                    <h1>Podcast Episode 5</h1>
+                    <p>Check out our new episode of the Rock Across Europe podcast! We listen and discuss our favorite christmas rock song and start rate our personal favorite albums of this year as the year draws to an end. Thank you for this year, we look forward to further share our passion of rock with all of you!</p>
+                </article>
+                <article>
+                    <h1>Podcast Episode 4</h1>
+                    <p>The newest Rock Across Europe episode is now available. We talk about the latest releases and interview Chino Moreno from Deftones. Click on the 'Podcasts' tab on this site to listen now!</p>
+                </article>
+            </div>
+
+            <div class="nf-section nf-postcasts" id="podcasts">
+                <article class="tooltip" >
+                    <h1>Episode 1</h1>
+                    <p>Listen to the team of Rock Across Europe talk everything music and festivals. Find out behind the scenes details and what the future plans for this website are. Come along on this hour long introductory episode and join us whilst we have a chat.</p>
+                    <audio src="media/vid/audio1.mp3" controls></audio>
+                    <span class="tooltip-text">Nostalgic Marshmallows by Arthur Vyncke | https://soundcloud.com/arthurvost
+                        Music promoted by https://www.free-stock-music.com
+                        Creative Commons Attribution-ShareAlike 3.0 Unported
+                        https://creativecommons.org/licenses/by-sa/3.0/deed.en_US</span>
+                </article>
+                <article class="tooltip" >
+                    <h1>Episode 2</h1>
+                    <p>We discuss the new Covid-19 regelations and the effect it will have on the festivals. We look up the newest releases from bands like Deftones and Korn. We're also excited to bring you and exclusive interview with a very special guest.</p>
+                    <audio src="media/vid/audio2.mp3" controls></audio>
+                    <span class="tooltip-text">Catalyst by Alexander Nakarada | https://www.serpentsoundstudios.com
+                        Music promoted by https://www.free-stock-music.com
+                        Attribution 4.0 International (CC BY 4.0)
+                        https://creativecommons.org/licenses/by/4.0/</span>
+                </article>
+                <article class="tooltip" >
+                    <h1>Episode 3</h1>
+                    <p>In todays podcast episode we discuss the changes we have made to the site and our future plans. Come along find out more about the team behind Rock Across Europe. We respond to your comments from our social media in this Q&A.</p>
+                    <audio src="media/vid/audio3.mp3" controls></audio>
+                    <span class="tooltip-text">Pure Rock n Roll by Alexander Nakarada | https://www.serpentsoundstudios.com
+                        Music promoted by https://www.free-stock-music.com
+                        Attribution 4.0 International (CC BY 4.0)
+                        https://creativecommons.org/licenses/by/4.0/</span>
+                </article>
+                <article class="tooltip" >
+                    <h1>Episode 4</h1>
+                    <p>In this episode we talk to Chino Moreno from Deftones about his festival experience. His best moments and his recommendations when going to a new festival. He talks about his passion for music and the evolution of his band, along with his greatest hits.</p>
+                    <audio src="media/vid/audio1.mp3" controls></audio>
+                    <span class="tooltip-text">Nostalgic Marshmallows by Arthur Vyncke | https://soundcloud.com/arthurvost
+                        Music promoted by https://www.free-stock-music.com
+                        Creative Commons Attribution-ShareAlike 3.0 Unported
+                        https://creativecommons.org/licenses/by-sa/3.0/deed.en_US</span>
+                </article>
+                <article class="tooltip" >
+                    <h1>Episode 5</h1>
+                    <p>In this special Christmas episode we count down the year so far. The albums, releases and artists and look forward to a new year. Thank you for sticking by our side through this year and we will be back next year with more festivals and more podcats!</p>
+                    <audio src="media/vid/audio2.mp3" controls></audio>
+                    <span class="tooltip-text">Catalyst by Alexander Nakarada | https://www.serpentsoundstudios.com
+                        Music promoted by https://www.free-stock-music.com
+                        Attribution 4.0 International (CC BY 4.0)
+                        https://creativecommons.org/licenses/by/4.0/</span>
+                </article>
+            </div>
+        </div>
+        <div id="nf-aside">
+            <div id="nf-form">
+                <form action="#">
+    
+                </form>
+            </div>
+        </div>
+        
+            
+    </main>
+
+
+
+
+
+    <footer>
+        <div id="footer-container">
+            <div class="footer-content links">
+                <h3>Festivals</h3>
+                <ul>
+                    <li><a href="festivals/rockAmRing.html">Rock am Ring</a></li>
+                    <li><a href="festivals/resurrectionFest.html">Resurrection Fest</a></li>
+                    <li><a href="festivals/hellfestOpen.html">Hellfest Open Air</a></li>
+                    <li><a href="festivals/swedenRock.html">Sweden Rock</a></li>
+                </ul>
+                
+                <div class="logos">
+                    <a href="https://youtube.com"><img src="media/img/yt.png" alt="youtube"></a>
+                    <a href="https://instagram.com"><img src="media/img/insta.png" alt="instagram"></a>
+                    <a href="https://facebook.com"><img src="media/img/faceb.png" alt="facebook"></a>
+                    <a href="https://twitter.com"><img src="media/img/twitter.png" alt="twitter links"></a>
+                </div>
+            </div>
+
+
+            <div class="footer-content footer-logo">
+                <a href="index.html"><img src="media/img/logo-v8.png" alt="logo"></a>
+            </div>
+
+
+
+            <div class="footer-content newsletter">
+                <h3>Newsletter</h3>
+                <input type="email" name="email" id="nl-email" required>
+                <input type="submit" value="Sign Up" id="nl-submit">
+                <div>
+                    <ul id="footer-contact" class="address-list">
+                        <li><span style="font-weight: bold;">University of the West of Scotland</span></li>
+                        <li>Paisley</li>
+                        <li>PA1 2BE</li>
+                        <li>Scotland</li>
+                        <li>United Kingdom</li>
+                        <li><span style="font-weight: bold;">Tel:</span> +44 (0)141 848 3000</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="lower-footer">
+            <ul>
+                <li><a href="documentation.html">Documentation </a><span class="dot">&middot;</span></li>
+                <li><a href="news.html" class="active-link">News Feed</a><span class="dot">&middot;</span></li>
+                <li><a href="index.html">Rock Across Europe</a> <span class="dot">&middot;</span></li>
+                <li><a href="contact.html"> Contact us</a></li>
+                <li><span class="dot">&middot;</span><a href="info.html"> Information</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
